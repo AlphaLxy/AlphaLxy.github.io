@@ -1,5 +1,5 @@
 ---
 title: {{ title }}
-date: {{ date }} UTC+08
+date: {{ date }}
 tags:
 ---
