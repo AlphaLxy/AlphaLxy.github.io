@@ -77,7 +77,7 @@ img.thumbnail {
 }
 .navbar-logo img,
 .footer-logo img {
-  max-height: 1.75rem;
+  max-height: 3.75rem;
 }
 .navbar-main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -108,6 +108,9 @@ img.thumbnail {
   align-items: center;
   padding: 1.25rem 0.75rem;
 }
+.navbar-main .navbar-item.navbar-logo {
+  padding: 0;
+}
 .navbar-main .navbar-item.is-active {
   color: #3273dc;
   background-color: transparent;
@@ -126,7 +129,7 @@ img.thumbnail {
 }
 .footer {
   background: #fff;
-  padding-bottom: 2rem;
+  padding: 1.5rem;
 }
 .footer .field .button {
   background: transparent;
@@ -479,4 +482,28 @@ figure.highlight:hover .copy {
 }
 .gist .file {
   all: initial;
+}
+.article {
+  counter-reset: section;
+}
+.article h2 {
+  counter-reset: sub-section;
+}
+.article h3 {
+  counter-reset: composite;
+}
+.article h4 {
+  counter-reset: detail;
+}
+.article h2:before {
+  content: counter(section) " ";
+  counter-increment: section;
+}
+.article h3:before {
+  content: counter(section) "." counter(sub-section) " ";
+  counter-increment: sub-section;
+}
+.article h4:before {
+  content: counter(section) "." counter(sub-section) "." counter(composite) " ";
+  counter-increment: composite;
 }
