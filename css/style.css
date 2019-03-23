@@ -485,6 +485,7 @@ figure.highlight:hover .copy {
 }
 .article {
   counter-reset: section;
+  letter-spacing: 0.02rem;
 }
 .article h2 {
   counter-reset: sub-section;
