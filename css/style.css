@@ -199,10 +199,17 @@ img.thumbnail {
   top: calc(0.3rem + 9px);
 }
 .article .article-meta {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+.article .title {
+  margin: 0.2rem 0 0.8rem;
+}
+.article .title .fas {
+  margin-right: 0.8rem;
 }
 .article .content {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
 }
 .article .content blockquote.pullquote {
   float: right;
@@ -483,9 +490,15 @@ figure.highlight:hover .copy {
 .gist .file {
   all: initial;
 }
+.post-copyright {
+  font-size: 1.1rem;
+  margin: 3rem 0 0;
+  padding: 1em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+}
 .article {
   counter-reset: section;
-  letter-spacing: 0.02rem;
 }
 .article h2 {
   counter-reset: sub-section;
