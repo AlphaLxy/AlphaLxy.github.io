@@ -20,8 +20,16 @@ textarea {
     max-width: 960px;
     width: 960px;
   }
+  .is-3-column .container {
+    max-width: 1216px;
+    width: 1216px;
+  }
 }
 @media screen and (min-width: 1472px) {
+  .is-3-column .container {
+    max-width: 1344px;
+    width: 1344px;
+  }
   .is-2-column .container {
     max-width: 1152px;
     width: 1152px;
@@ -56,6 +64,9 @@ textarea {
 .card {
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+}
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.1);
 }
 .card + .card,
 .card + .column-right-shadow {
@@ -143,6 +154,9 @@ img.thumbnail {
 .widget .menu-list li ul {
   margin-right: 0;
 }
+.widget .menu-list a {
+  transition: background-color 0.3s ease-in-out;
+}
 .widget .menu-list a.level {
   display: flex;
 }
@@ -202,13 +216,13 @@ img.thumbnail {
   margin-bottom: 1.5rem !important;
 }
 .article .title {
-  margin: 0.2rem 0 0.8rem;
+  margin: 0 0 0.5rem;
 }
 .article .title .fas {
   margin-right: 0.8rem;
 }
 .article .content {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.02rem;
 }
 .article .content blockquote.pullquote {
@@ -299,6 +313,9 @@ img.thumbnail {
 }
 .is-overflow-x-auto {
   overflow-x: auto !important;
+}
+.is-overflow-x-auto::-webkit-scrollbar {
+  width: 0 !important;
 }
 .is-flex-grow {
   flex-grow: 1 !important;
@@ -491,9 +508,10 @@ figure.highlight:hover .copy {
   all: initial;
 }
 .post-copyright {
-  font-size: 1.1rem;
-  margin: 3rem 0 0;
-  padding: 1em 1em;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  margin: 2.5rem 0 0;
+  padding: 1rem 1rem;
   border-left: 3px solid #ff1700;
   background-color: #f9f9f9;
 }
