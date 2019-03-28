@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Icarus 主题自定义 - Alpha Lxy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <meta name="description" content="本博客所选取的主题是 Icarus ，并做了一些个性化的修改，很多修改都可以直观的看到。详细的差异可以查看 diff，这里记录一些主要的改动。">
+<meta name="keywords" content="hexo,icarus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Icarus 主题自定义">
+<meta property="og:url" content="https://www.alphalxy.com/2019/03/customize-icarus/index.html">
+<meta property="og:site_name" content="Alpha Lxy">
+<meta property="og:description" content="本博客所选取的主题是 Icarus ，并做了一些个性化的修改，很多修改都可以直观的看到。详细的差异可以查看 diff，这里记录一些主要的改动。">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-03-28T14:25:49.244Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Icarus 主题自定义">
+<meta name="twitter:description" content="本博客所选取的主题是 Icarus ，并做了一些个性化的修改，很多修改都可以直观的看到。详细的差异可以查看 diff，这里记录一些主要的改动。">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/github-gist.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="Icarus 主题自定义" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">Home</a>
+                
+                <a class="navbar-item" href="/archives/">Archives</a>
+                
+                <a class="navbar-item" href="/categories/">Categories</a>
+                
+                <a class="navbar-item" href="/tags/">Tags</a>
+                
+                <a class="navbar-item" href="/about/">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="AlphaLxy GitHub" href="https://www.github.com/AlphaLxy">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <i class="fas fa-angle-double-right"></i>Icarus 主题自定义
+            
+        </h1>
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-03-24T05:45:51.000Z"><i class="far fa-calendar-alt">&nbsp;</i>2019-03-24</time>
+                
+                <time class="level-item has-text-grey is-hidden-mobile" datetime="2019-03-28T14:25:49.244Z"><i class="far fa-calendar-check">&nbsp;</i>2019-03-28</time>
+                
+                
+                <div class="level-item">
+                <i class="far fa-folder-open has-text-grey"></i>&nbsp;
+                <a class="has-link-grey -link" href="/categories/hexo/">hexo</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/hexo/icarus/">icarus</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    <i class="far fa-clock"></i>&nbsp;
+                    
+                    
+                    12 minutes read (About 1735 words)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
+                
+            </div>
+        </div>
+        
+        <div class="content">
+            <p>本博客所选取的主题是 <a href="https://github.com/AlphaLxy/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a> ，并做了一些个性化的修改，很多修改都可以直观的看到。详细的差异可以查看 <a href="https://github.com/ppoffice/hexo-theme-icarus/compare/dbcc73d...AlphaLxy:master" target="_blank" rel="noopener">diff</a>，这里记录一些主要的改动。<br><a id="more"></a></p>
+<blockquote>
+<p>注: 可以通过变量 <code>page.layout</code> 来判断当前页面类型，<code>&#39;post&#39;</code> 表示当前是文章页面，具体可参考 <a href="https://hexo.io/zh-cn/docs/variables" target="_blank" rel="noopener">hexo</a> 文档。</p>
+</blockquote>
+<h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><h3 id="文章页面两栏布局"><a href="#文章页面两栏布局" class="headerlink" title="文章页面两栏布局"></a>文章页面两栏布局</h3><p>主题默认是三栏布局，并且显示了很多的 <code>widget</code> ，但在阅读文章时显得有些拥挤。因此在文章页面，修改为两栏布局，并显示特定的 <code>widget</code>。</p>
+<figure class="highlight diff hljs"><figcaption><span>diff:includes/helpers/layout.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">     const widgets = hexo.extend.helper.get('get_config').bind(this)('widgets');</span><br><span class="line"><span class="hljs-deletion">-    return widgets.filter(widget =&gt; widget.hasOwnProperty('position') &amp;&amp; widget.position === position);</span></span><br><span class="line"><span class="hljs-addition">+    if (this.page.layout !== 'post') &#123;</span></span><br><span class="line"><span class="hljs-addition">+        return widgets.filter(widget =&gt; widget.hasOwnProperty('position') &amp;&amp; widget.position === position);</span></span><br><span class="line"><span class="hljs-addition">+    &#125;</span></span><br><span class="line"><span class="hljs-addition">+    if (position === 'left') &#123;</span></span><br><span class="line"><span class="hljs-addition">+        return widgets.filter(widget =&gt; widget.hasOwnProperty('position') &amp;&amp; (widget.type === 'toc' || widget.type === 'profile'));</span></span><br><span class="line"><span class="hljs-addition">+    &#125; else &#123;</span></span><br><span class="line"><span class="hljs-addition">+        return []</span></span><br><span class="line"><span class="hljs-addition">+    &#125;</span></span><br></pre></td></tr></table></figure>
+<p>可以参考上述代码，即可实现不同页面不同 <code>widget</code>。</p>
+<p>但两栏整体宽度跟三栏不同。因此强制指定为三栏布局，并且修改相应的宽度，这样所有的页面侧边栏宽度保持一致。</p>
+<figure class="highlight diff hljs"><figcaption><span>diff:layout/common/widget.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> &lt;% function side_column_class() &#123;</span><br><span class="line">     switch (column_count()) &#123;</span><br><span class="line">         case 2:</span><br><span class="line"><span class="hljs-deletion">-            return 'is-4-tablet is-4-desktop is-4-widescreen';</span></span><br><span class="line"><span class="hljs-addition">+            return 'is-4-tablet is-4-desktop is-3-widescreen';</span></span><br><span class="line">         case 3:</span><br></pre></td></tr></table></figure>
+<figure class="highlight diff hljs"><figcaption><span>diff:layout/layout.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-&lt;body class="is-&lt;%= column_count() %&gt;-column"&gt;</span></span><br><span class="line"><span class="hljs-addition">+&lt;body class="is-3-column"&gt;</span></span><br><span class="line">     &lt;%- partial('common/navbar', &#123; page &#125;) %&gt;</span><br><span class="line">     &lt;% function main_column_class() &#123;</span><br><span class="line">         switch (column_count()) &#123;</span><br><span class="line">             case 1:</span><br><span class="line">                 return 'is-12';</span><br><span class="line">             case 2:</span><br><span class="line"><span class="hljs-deletion">-                return 'is-8-tablet is-8-desktop is-8-widescreen';</span></span><br><span class="line"><span class="hljs-addition">+                return 'is-8-tablet is-8-desktop is-9-widescreen';</span></span><br></pre></td></tr></table></figure>
+<p>并修改在不同屏幕小大下的宽度<br><figure class="highlight diff hljs"><figcaption><span>diff:source/css/style.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">     .is-2-column .container</span><br><span class="line">         max-width: screen-desktop - 2 * gap</span><br><span class="line">         width: screen-desktop - 2 * gap</span><br><span class="line"><span class="hljs-addition">+    .is-3-column .container</span></span><br><span class="line"><span class="hljs-addition">+        max-width: screen-widescreen - gap</span></span><br><span class="line"><span class="hljs-addition">+        width: screen-widescreen - gap</span></span><br><span class="line"> @media screen and (min-width: screen-fullhd)</span><br><span class="line"><span class="hljs-addition">+    .is-3-column .container</span></span><br><span class="line"><span class="hljs-addition">+        max-width: screen-fullhd - 2 * gap</span></span><br><span class="line"><span class="hljs-addition">+        width: screen-fullhd - 2 * gap</span></span><br><span class="line">     .is-2-column .container</span><br><span class="line">         max-width: screen-widescreen - 2 * gap</span><br><span class="line">         width: screen-widescreen - 2 * gap</span><br></pre></td></tr></table></figure></p>
+<h3 id="优化文章标题布局"><a href="#优化文章标题布局" class="headerlink" title="优化文章标题布局"></a>优化文章标题布局</h3><p>标题移动到文章信息上方，增加更新时间，并增加了icon。<br><figure class="highlight diff hljs"><figcaption><span>diff:layout/common/article.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">     &lt;div class="card-content article &lt;%= post.hasOwnProperty('direction') ? post.direction : '' %&gt;"&gt;</span><br><span class="line"><span class="hljs-addition">+        &lt;h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"&gt;</span></span><br><span class="line"><span class="hljs-addition">+            &lt;% if (index) &#123; %&gt;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;a class="has-link-black-ter" href="&lt;%- url_for(post.link ? post.link : post.path) %&gt;"&gt;&lt;i class="fas fa-angle-double-right"&gt;&lt;/i&gt;&lt;%= post.title %&gt;&lt;/a&gt;</span></span><br><span class="line"><span class="hljs-addition">+            &lt;% &#125; else &#123; %&gt;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;i class="fas fa-angle-double-right"&gt;&lt;/i&gt;&lt;%= post.title %&gt;</span></span><br><span class="line"><span class="hljs-addition">+            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;/h1&gt;</span></span><br><span class="line">         &lt;% if (post.layout != 'page') &#123; %&gt;</span><br><span class="line">         &lt;div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto"&gt;</span><br><span class="line">             &lt;div class="level-left"&gt;</span><br><span class="line"><span class="hljs-deletion">-                &lt;time class="level-item has-text-grey" datetime="&lt;%= date_xml(post.date) %&gt;"&gt;&lt;%= date(post.date) %&gt;&lt;/time&gt;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;time class="level-item has-text-grey" datetime="&lt;%= date_xml(post.date) %&gt;"&gt;&lt;i class="far fa-calendar-alt"&gt;&amp;nbsp;&lt;/i&gt;&lt;%= date(post.date) %&gt;&lt;/time&gt;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;% if (post.updated &amp;&amp; post.updated &gt; post.date) &#123; %&gt;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;time class="level-item has-text-grey is-hidden-mobile" datetime="&lt;%= date_xml(post.updated) %&gt;"&gt;&lt;i class="far fa-calendar-check"&gt;&amp;nbsp;&lt;/i&gt;&lt;%= date(post.updated) %&gt;&lt;/time&gt;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;% &#125; %&gt;</span></span><br><span class="line">                 &lt;% if (post.categories &amp;&amp; post.categories.length) &#123; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>其中创建时间使用日期。<br><figure class="highlight diff hljs"><figcaption><span>diff:source/js/main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-    if (typeof(moment) === 'function') &#123;</span></span><br><span class="line"><span class="hljs-deletion">-        $('.article-meta time').each(function () &#123;</span></span><br><span class="line"><span class="hljs-deletion">-            $(this).text(moment($(this).attr('datetime')).fromNow());</span></span><br><span class="line"><span class="hljs-deletion">-        &#125;);</span></span><br><span class="line"><span class="hljs-deletion">-    &#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="优化文章结尾布局"><a href="#优化文章结尾布局" class="headerlink" title="优化文章结尾布局"></a>优化文章结尾布局</h3><p>在文章结尾增加一个 <code>hr</code>，并修改 <code>tags</code> 展示。在预览时也显示 <code>tags</code>，并且将 <code>Read More</code> 按钮放置在右边。<br><figure class="highlight diff hljs"><figcaption><span>diff:layout/common/article.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">     &lt;% if (!index &amp;&amp; post.tags &amp;&amp; post.tags.length) &#123; %&gt;</span><br><span class="line"><span class="hljs-addition">+    &lt;hr style="height:1px;margin:1rem 0"/&gt;</span></span><br><span class="line">     &lt;div class="level is-size-7 is-uppercase"&gt;</span><br><span class="line">         &lt;div class="level-start"&gt;</span><br><span class="line">             &lt;div class="level-item"&gt;</span><br><span class="line"><span class="hljs-deletion">-                &lt;span class="is-size-6 has-text-grey has-mr-7"&gt;#&lt;/span&gt;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;i class="fas fa-tags has-text-grey"&gt;&lt;/i&gt;&amp;nbsp;</span></span><br><span class="line">                 &lt;%- list_tags(post.tags, &#123;</span><br><span class="line">                     class: 'has-link-grey ',</span><br><span class="line">                     show_count: false,</span><br><span class="line"><span class="hljs-deletion">-                    style: 'link'</span></span><br><span class="line"><span class="hljs-addition">+                    style: 'link',</span></span><br><span class="line"><span class="hljs-addition">+                    separator: ',&amp;nbsp;'</span></span><br><span class="line">                 &#125;) %&gt;</span><br><span class="line">             &lt;/div&gt;</span><br><span class="line">         &lt;/div&gt;</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">     &lt;% &#125; %&gt;</span><br><span class="line">     &lt;% if (index &amp;&amp; post.excerpt) &#123; %&gt;</span><br><span class="line"><span class="hljs-deletion">-    &lt;div class="level is-mobile"&gt;</span></span><br><span class="line"><span class="hljs-addition">+    &lt;hr style="height:1px;margin:1rem 0"/&gt;</span></span><br><span class="line"><span class="hljs-addition">+    &lt;div class="level is-mobile is-flex"&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;div class="level-start"&gt;</span></span><br><span class="line"><span class="hljs-addition">+            &lt;% if (post.tags &amp;&amp; post.tags.length) &#123; %&gt;</span></span><br><span class="line"><span class="hljs-addition">+            &lt;div class="level-item is-size-7 is-uppercase"&gt;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;i class="fas fa-tags has-text-grey"&gt;&lt;/i&gt;&amp;nbsp;</span></span><br><span class="line"><span class="hljs-addition">+                &lt;%- list_tags(post.tags, &#123;</span></span><br><span class="line"><span class="hljs-addition">+                    class: 'has-link-grey ',</span></span><br><span class="line"><span class="hljs-addition">+                    show_count: false,</span></span><br><span class="line"><span class="hljs-addition">+                    style: 'link',</span></span><br><span class="line"><span class="hljs-addition">+                    separator: ',&amp;nbsp;'</span></span><br><span class="line"><span class="hljs-addition">+                &#125;) %&gt;</span></span><br><span class="line"><span class="hljs-addition">+            &lt;/div&gt;</span></span><br><span class="line"><span class="hljs-addition">+            &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;/div&gt;</span></span><br><span class="line">         &lt;div class="level-start"&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="优化个人信息布局"><a href="#优化个人信息布局" class="headerlink" title="优化个人信息布局"></a>优化个人信息布局</h3><p>减少头像大小，头像下方计数的地方增加链接，follow前增加icon。<br><figure class="highlight diff hljs"><figcaption><span>diff:layout/widget/profile.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-    &lt;nav class="level is-mobile"&gt;</span></span><br><span class="line"><span class="hljs-addition">+    &lt;nav class="level menu-list is-mobile" style="margin-bottom:1rem"&gt;</span></span><br><span class="line">         &lt;div class="level-item has-text-centered is-marginless"&gt;</span><br><span class="line"><span class="hljs-deletion">-            &lt;div&gt;</span></span><br><span class="line"><span class="hljs-addition">+            &lt;a href="&lt;%- url_for('/archives/') %&gt;"&gt;</span></span><br><span class="line">                 &lt;p class="heading"&gt;</span><br><span class="line">......</span><br></pre></td></tr></table></figure></p>
+<h3 id="优化移动端显示"><a href="#优化移动端显示" class="headerlink" title="优化移动端显示"></a>优化移动端显示</h3><p>在移动端，隐藏 <code>archive</code> 和 <code>tagcloud</code>。</p>
+<figure class="highlight diff hljs"><figcaption><span>diff:layout/widget/archive.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-&lt;div class="card widget"&gt;</span></span><br><span class="line"><span class="hljs-addition">+&lt;div class="card widget is-hidden-mobile"&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight diff hljs"><figcaption><span>diff:layout/widget/tagcloud.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-&lt;div class="card widget"&gt;</span></span><br><span class="line"><span class="hljs-addition">+&lt;div class="card widget is-hidden-mobile"&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="目录粘性布局"><a href="#目录粘性布局" class="headerlink" title="目录粘性布局"></a>目录粘性布局</h3><p>增加 <code>column-left is-sticky</code> 类。<br><figure class="highlight diff hljs"><figcaption><span>diff:layout/widget/toc.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-&lt;div class="card widget" id="toc"&gt;</span></span><br><span class="line"><span class="hljs-addition">+&lt;div class="card widget column-left is-sticky" id="toc"&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><h3 id="增加版权说明"><a href="#增加版权说明" class="headerlink" title="增加版权说明"></a>增加版权说明</h3><figure class="highlight diff hljs"><figcaption><span>diff:layout/common/article.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">     &lt;div class="content"&gt;</span><br><span class="line">         &lt;%- index &amp;&amp; post.excerpt ? post.excerpt : post.content %&gt;</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line"><span class="hljs-addition">+    &lt;% if (!index &amp;&amp; post.layout === 'post' &amp;&amp; post.copyright !== false) &#123; %&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;ul class="post-copyright"&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;li&gt;&lt;strong&gt;本文标题：&lt;/strong&gt;&lt;a href="&lt;%= post.permalink %&gt;"&gt;&lt;%= page.title %&gt;&lt;/a&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;li&gt;&lt;strong&gt;本文作者：&lt;/strong&gt;&lt;a href="&lt;%= theme.url %&gt;"&gt;&lt;%= theme.author %&gt;&lt;/a&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;li&gt;&lt;strong&gt;本文链接：&lt;/strong&gt;&lt;a href="&lt;%= post.permalink %&gt;"&gt;&lt;%= post.permalink %&gt;&lt;/a&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;li&gt;&lt;strong&gt;发布时间：&lt;/strong&gt;&lt;%= post.date.format("YYYY-MM-DD") %&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;li&gt;&lt;strong&gt;版权声明：&lt;/strong&gt;本博客所有文章除特别声明外，均采用 &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank"&gt;CC BY-NC-SA 4.0&lt;/a&gt; 许可协议。转载请注明出处！</span></span><br><span class="line"><span class="hljs-addition">+        &lt;/li&gt;</span></span><br><span class="line"><span class="hljs-addition">+        &lt;/ul&gt;</span></span><br><span class="line"><span class="hljs-addition">+    &lt;% &#125; %&gt;</span></span><br><span class="line">     &lt;% if (!index &amp;&amp; post.tags &amp;&amp; post.tags.length) &#123; %&gt;</span><br></pre></td></tr></table></figure>
+<p>并增加样式<br><figure class="highlight diff hljs"><figcaption><span>diff:source/css/style.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+.post-copyright</span></span><br><span class="line"><span class="hljs-addition">+    font-size: 1rem</span></span><br><span class="line"><span class="hljs-addition">+    letter-spacing: 0.02rem</span></span><br><span class="line"><span class="hljs-addition">+    word-break: break-all</span></span><br><span class="line"><span class="hljs-addition">+    margin: 2.5rem 0 0</span></span><br><span class="line"><span class="hljs-addition">+    padding: 1rem 1rem</span></span><br><span class="line"><span class="hljs-addition">+    border-left: 3px solid #FF1700</span></span><br><span class="line"><span class="hljs-addition">+    background-color: #F9F9F9</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="增加标题自动计数"><a href="#增加标题自动计数" class="headerlink" title="增加标题自动计数"></a>增加标题自动计数</h3><figure class="highlight diff hljs"><figcaption><span>diff:source/css/style.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+.article &#123;counter-reset:section&#125;</span></span><br><span class="line"><span class="hljs-addition">+.article h2&#123;counter-reset:sub-section&#125;</span></span><br><span class="line"><span class="hljs-addition">+.article h3&#123;counter-reset:composite&#125;</span></span><br><span class="line"><span class="hljs-addition">+.article h4&#123;counter-reset:detail&#125;</span></span><br><span class="line"><span class="hljs-addition">+.article h2:before&#123;content:counter(section) " ";counter-increment:section&#125;</span></span><br><span class="line"><span class="hljs-addition">+.article h3:before&#123;content:counter(section) "." counter(sub-section) " ";counter-increment:sub-section&#125;</span></span><br><span class="line"><span class="hljs-addition">+.article h4:before&#123;content:counter(section) "." counter(sub-section) "." counter(composite) " ";counter-increment:composite&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="默认显示目录"><a href="#默认显示目录" class="headerlink" title="默认显示目录"></a>默认显示目录</h3><p>正常开启目录需要在 <code>meta</code> 信息中加入 <code>toc: true</code> 开启，但绝大部分文章都是有目录的，因此修改为默认开启。因为有多个地方引用了 <code>get_config(&#39;toc&#39;)</code> 并且需要判断当前页面，改起来稍微麻烦一些，因此直接修改了 <code>get_config</code> 方法。</p>
+<figure class="highlight diff hljs"><figcaption><span>diff:includes/helpers/config.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">        return defaultValue;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        const property = readProperty(specs, configName);</span><br><span class="line"><span class="hljs-deletion">-       return property === null ? null : property[descriptors.defaultValue];</span></span><br><span class="line"><span class="hljs-addition">+       const result = property === null ? null : property[descriptors.defaultValue];</span></span><br><span class="line"><span class="hljs-addition">+       return (configName === 'toc' &amp;&amp; this.page.layout === 'post' &amp;&amp; result === null) ? true : result;</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="页面footer显示一组icon"><a href="#页面footer显示一组icon" class="headerlink" title="页面footer显示一组icon"></a>页面footer显示一组icon</h3><p>默认情况下一个icon对应一个链接，但例如 <code>CC BY-NC-SA 4.0</code> 需要四个图标一组。因此修改代码，使得配置 <code>link.icon</code> 可以是一个数组，效果可以参考页面底部。</p>
+<figure class="highlight diff hljs"><figcaption><span>diff:layout/common/footer.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">     &lt;% &#125; else &#123; %&gt;</span><br><span class="line"><span class="hljs-deletion">-    &lt;i class="&lt;%= link.icon %&gt;"&gt;&lt;/i&gt;</span></span><br><span class="line"><span class="hljs-addition">+    &lt;% for (let icon of (Array.isArray(link.icon) ? link.icon : [link.icon])) &#123; %&gt;&lt;i class="&lt;%= icon %&gt;"&gt;&lt;/i&gt;&amp;nbsp;&lt;% &#125; %&gt;</span></span><br><span class="line">     &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight diff hljs"><figcaption><span>diff:includes/specs/icon_link.spec.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">     icon: &#123;</span><br><span class="line">         [required]: true,</span><br><span class="line"><span class="hljs-deletion">-        [type]: 'string',</span></span><br><span class="line"><span class="hljs-addition">+        [type]: ['string', 'array'],</span></span><br><span class="line">         [doc]: 'Link icon class names'</span><br></pre></td></tr></table></figure>
+<p><code>_config.yml</code> 中配置如下<br><figure class="highlight yml hljs"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">footer:</span></span><br><span class="line"><span class="hljs-attr">    links:</span></span><br><span class="line">        <span class="hljs-string">CC</span> <span class="hljs-string">BY-NC-SA</span> <span class="hljs-number">4.0</span><span class="hljs-string">:</span></span><br><span class="line"><span class="hljs-attr">            icon:</span></span><br><span class="line"><span class="hljs-bullet">              -</span> <span class="hljs-string">fab</span> <span class="hljs-string">fa-creative-commons</span></span><br><span class="line"><span class="hljs-bullet">              -</span> <span class="hljs-string">fab</span> <span class="hljs-string">fa-creative-commons-by</span></span><br><span class="line"><span class="hljs-bullet">              -</span> <span class="hljs-string">fab</span> <span class="hljs-string">fa-creative-commons-nc</span></span><br><span class="line"><span class="hljs-bullet">              -</span> <span class="hljs-string">fab</span> <span class="hljs-string">fa-creative-commons-sa</span></span><br><span class="line"><span class="hljs-attr">            url:</span> <span class="hljs-string">'https://creativecommons.org/licenses/by-nc-sa/4.0/'</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="可以配置文章开头是否显示图片"><a href="#可以配置文章开头是否显示图片" class="headerlink" title="可以配置文章开头是否显示图片"></a>可以配置文章开头是否显示图片</h3><p><code>Icarus</code> 支持文章设置一个图片，在文章开头、最近的文章、时间线等地方显示。但有些图放大之后会显得很不协调，因此修改以支持自定义是否显示。修改 <code>has_thumbnail</code> 方法，增加参数 <code>isArticle</code> 参数，默认 <code>false</code>，并在文章页面修改调用参数。</p>
+<figure class="highlight diff hljs"><figcaption><span>diff:includes/helpers/page.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-    hexo.extend.helper.register('has_thumbnail', function (post) &#123;</span></span><br><span class="line"><span class="hljs-addition">+    hexo.extend.helper.register('has_thumbnail', function (post, isArticle = false) &#123;</span></span><br><span class="line">         const getConfig = hexo.extend.helper.get('get_config').bind(this);</span><br><span class="line">         const allowThumbnail = getConfig('article.thumbnail', true);</span><br><span class="line">         if (!allowThumbnail) &#123;</span><br><span class="line">             return false;</span><br><span class="line">         &#125;</span><br><span class="line"><span class="hljs-addition">+        if (isArticle &amp;&amp; post['article-thumbnail'] === false)&#123;</span></span><br><span class="line"><span class="hljs-addition">+            return false;</span></span><br><span class="line"><span class="hljs-addition">+        &#125;</span></span><br><span class="line">         return post.hasOwnProperty('thumbnail') &amp;&amp; post.thumbnail;</span><br></pre></td></tr></table></figure>
+<figure class="highlight diff hljs"><figcaption><span>diff:layout/common/article.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> &lt;div class="card"&gt;</span><br><span class="line"><span class="hljs-deletion">-    &lt;% if (has_thumbnail(post)) &#123; %&gt;</span></span><br><span class="line"><span class="hljs-addition">+    &lt;% if (has_thumbnail(post, true)) &#123; %&gt;</span></span><br><span class="line">     &lt;div class="card-image"&gt;</span><br></pre></td></tr></table></figure>
+<p>这样修改之后，如果文章 <code>meta</code> 信息中包含 <code>article-thumbnail: false</code>，就可以取消图片的显示。</p>
+<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><h3 id="修改-logo-和-favicon"><a href="#修改-logo-和-favicon" class="headerlink" title="修改 logo 和 favicon"></a>修改 logo 和 favicon</h3><p><a href="https://www.alphalxy.com/2019/03/python-logo/">用 Python 设计 Logo</a>，并微调样式。</p>
+<h3 id="按钮背景颜色增加渐变"><a href="#按钮背景颜色增加渐变" class="headerlink" title="按钮背景颜色增加渐变"></a>按钮背景颜色增加渐变</h3><figure class="highlight diff hljs"><figcaption><span>diff:source/css/style.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">     .menu-list li ul</span><br><span class="line">         margin-right: 0</span><br><span class="line"><span class="hljs-addition">+    .menu-list a</span></span><br><span class="line"><span class="hljs-addition">+        transition: background-color 0.3s ease-in-out</span></span><br><span class="line">     .menu-list a.level</span><br><span class="line">         display: flex</span><br></pre></td></tr></table></figure>
+<h3 id="card-增加浮动效果"><a href="#card-增加浮动效果" class="headerlink" title="card 增加浮动效果"></a>card 增加浮动效果</h3><p><code>:hover</code> 时增大阴影，并增加动画属性 <code>ease-in-out</code>。</p>
+<figure class="highlight diff hljs"><figcaption><span>diff:source/css/style.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> .card</span><br><span class="line">     border-radius: 4px</span><br><span class="line">     box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)</span><br><span class="line"><span class="hljs-addition">+    &amp;:hover</span></span><br><span class="line"><span class="hljs-addition">+        box-shadow: 0 6px 15px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.1)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight diff hljs"><figcaption><span>diff:source/js/animation.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">     element.style.transform = '';</span><br><span class="line"><span class="hljs-deletion">-    element.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';</span></span><br><span class="line"><span class="hljs-addition">+    element.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.3s ease-in-out';</span></span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这里只列举了部分改动，详细的差异可以查看 <a href="https://github.com/ppoffice/hexo-theme-icarus/compare/dbcc73d...AlphaLxy:master" target="_blank" rel="noopener">diff</a>。</p>
+<p>本文会持续更新，保持跟最新的博客效果一致，希望能给你自定义主题一些帮助。</p>
+<p>如果有其他想法或者意见，可以在下方留言。</p>
+<p>😊</p>
+
+        </div>
+        
+            <ul class="post-copyright">
+            <li><strong>本文标题：</strong><a href="https://www.alphalxy.com/2019/03/customize-icarus/">Icarus 主题自定义</a></li>
+            <li><strong>本文作者：</strong><a href="https://www.alphalxy.com">Xinyu Liu</a></li>
+            <li><strong>本文链接：</strong><a href="https://www.alphalxy.com/2019/03/customize-icarus/">https://www.alphalxy.com/2019/03/customize-icarus/</a></li>
+            <li><strong>发布时间：</strong>2019-03-24</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+            </li>
+            </ul>
+        
+        
+        <hr style="height:1px;margin:1rem 0">
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <i class="fas fa-tags has-text-grey"></i>&nbsp;
+                    <a class="has-link-grey -link" href="/tags/hexo/">hexo</a>,&nbsp;<a class="has-link-grey -link" href="/tags/icarus/">icarus</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/03/python-logo/">
+                <span class="level-item">用 Python 设计 Logo</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://www.alphalxy.com/2019/03/customize-icarus/';
+        this.page.identifier = '2019/03/customize-icarus/';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'alphalxy-blog' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
+</div>
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level" style="margin-bottom:1rem">
+            <div class="level-item has-text-centered">
+                <div>
+                    
+                        <img class="image is-96x96 has-mb-6" src="https://www.gravatar.com/avatar/e0f4032c0f2d1068ffffbaf93c0bef52?s=96" alt="Xinyu Liu">
+                    
+                    
+                    <p class="is-size-4 is-block">
+                        Xinyu Liu
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Alpha Lxy
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Beijing, China</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level menu-list is-mobile" style="margin-bottom:1rem">
+            <div class="level-item has-text-centered is-marginless">
+                <a href="/archives/">
+                    <p class="heading">
+                        Posts
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        3
+                    </p>
+                </a>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <a href="/categories/">
+                    <p class="heading">
+                        Categories
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        4
+                    </p>
+                </a>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <a href="/tags/">
+                    <p class="heading">
+                        Tags
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        4
+                    </p>
+                </a>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://www.github.com/AlphaLxy" target="_blank">
+                <i class="fab fa-github"></i>&nbsp;&nbsp;Follow</a>
+        </div>
+        
+        
+    </div>
+</div>
+
+    
+        
+<div class="card widget column-left is-sticky" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#布局">
+        <span class="has-mr-6">1</span>
+        <span>布局</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#文章页面两栏布局">
+        <span class="has-mr-6">1.1</span>
+        <span>文章页面两栏布局</span>
+        </a></li><li>
+        <a class="is-flex" href="#优化文章标题布局">
+        <span class="has-mr-6">1.2</span>
+        <span>优化文章标题布局</span>
+        </a></li><li>
+        <a class="is-flex" href="#优化文章结尾布局">
+        <span class="has-mr-6">1.3</span>
+        <span>优化文章结尾布局</span>
+        </a></li><li>
+        <a class="is-flex" href="#优化个人信息布局">
+        <span class="has-mr-6">1.4</span>
+        <span>优化个人信息布局</span>
+        </a></li><li>
+        <a class="is-flex" href="#优化移动端显示">
+        <span class="has-mr-6">1.5</span>
+        <span>优化移动端显示</span>
+        </a></li><li>
+        <a class="is-flex" href="#目录粘性布局">
+        <span class="has-mr-6">1.6</span>
+        <span>目录粘性布局</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#功能">
+        <span class="has-mr-6">2</span>
+        <span>功能</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#增加版权说明">
+        <span class="has-mr-6">2.1</span>
+        <span>增加版权说明</span>
+        </a></li><li>
+        <a class="is-flex" href="#增加标题自动计数">
+        <span class="has-mr-6">2.2</span>
+        <span>增加标题自动计数</span>
+        </a></li><li>
+        <a class="is-flex" href="#默认显示目录">
+        <span class="has-mr-6">2.3</span>
+        <span>默认显示目录</span>
+        </a></li><li>
+        <a class="is-flex" href="#页面footer显示一组icon">
+        <span class="has-mr-6">2.4</span>
+        <span>页面footer显示一组icon</span>
+        </a></li><li>
+        <a class="is-flex" href="#可以配置文章开头是否显示图片">
+        <span class="has-mr-6">2.5</span>
+        <span>可以配置文章开头是否显示图片</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#样式">
+        <span class="has-mr-6">3</span>
+        <span>样式</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#修改-logo-和-favicon">
+        <span class="has-mr-6">3.1</span>
+        <span>修改 logo 和 favicon</span>
+        </a></li><li>
+        <a class="is-flex" href="#按钮背景颜色增加渐变">
+        <span class="has-mr-6">3.2</span>
+        <span>按钮背景颜色增加渐变</span>
+        </a></li><li>
+        <a class="is-flex" href="#card-增加浮动效果">
+        <span class="has-mr-6">3.3</span>
+        <span>card 增加浮动效果</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#总结">
+        <span class="has-mr-6">4</span>
+        <span>总结</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="Icarus 主题自定义" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Xinyu Liu&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                Visited by <span id="busuanzi_value_site_uv">0</span> users
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        
+                        <i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;<i class="fab fa-creative-commons-nc"></i>&nbsp;<i class="fab fa-creative-commons-sa"></i>&nbsp;
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="AlphaLxy GitHub" href="https://www.github.com/AlphaLxy">
+                        
+                        <i class="fab fa-github"></i>&nbsp;
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/js/clipboard.js" defer></script>
+    
+
+    
+    
+    
+
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>

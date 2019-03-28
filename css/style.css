@@ -88,7 +88,7 @@ img.thumbnail {
 }
 .navbar-logo img,
 .footer-logo img {
-  max-height: 3.75rem;
+  max-height: 2.5rem;
 }
 .navbar-main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -212,14 +212,24 @@ img.thumbnail {
 .timeline .media:first-child:last-child:after {
   top: calc(0.3rem + 9px);
 }
+.article {
+  padding: 1.5rem 1.8rem;
+}
 .article .article-meta {
   margin-bottom: 1.5rem !important;
 }
+.article .article-meta >:first-child {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.article .article-meta >:first-child >* {
+  flex-grow: 0 !important;
+}
 .article .title {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.5rem -0.1rem;
 }
 .article .title .fas {
-  margin-right: 0.8rem;
+  margin-right: 0.5rem;
 }
 .article .content {
   font-size: 1.1rem;
@@ -510,6 +520,7 @@ figure.highlight:hover .copy {
 .post-copyright {
   font-size: 1rem;
   letter-spacing: 0.02rem;
+  word-break: break-all;
   margin: 2.5rem 0 0;
   padding: 1rem 1rem;
   border-left: 3px solid #ff1700;
