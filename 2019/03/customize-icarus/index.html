@@ -15,10 +15,14 @@
 <meta property="og:site_name" content="Alpha Lxy">
 <meta property="og:description" content="本博客所选取的主题是 Icarus ，并做了一些个性化的修改，很多修改都可以直观的看到。详细的差异可以查看 diff，这里记录一些主要的改动。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-28T14:25:49.244Z">
+<meta property="og:image" content="https://blog.zhangruipeng.me/hexo-theme-icarus/images/favicon.svg">
+<meta property="og:updated_time" content="2019-04-20T01:56:16.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Icarus 主题自定义">
 <meta name="twitter:description" content="本博客所选取的主题是 Icarus ，并做了一些个性化的修改，很多修改都可以直观的看到。详细的差异可以查看 diff，这里记录一些主要的改动。">
+<meta name="twitter:image" content="https://blog.zhangruipeng.me/hexo-theme-icarus/images/favicon.svg">
+
+
 
 
 
@@ -156,7 +160,7 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-03-24T05:45:51.000Z"><i class="far fa-calendar-alt">&nbsp;</i>2019-03-24</time>
                 
-                <time class="level-item has-text-grey is-hidden-mobile" datetime="2019-03-28T14:25:49.244Z"><i class="far fa-calendar-check">&nbsp;</i>2019-03-28</time>
+                <time class="level-item has-text-grey is-hidden-mobile" datetime="2019-04-20T01:56:16.810Z"><i class="far fa-calendar-check">&nbsp;</i>2019-04-20</time>
                 
                 
                 <div class="level-item">
@@ -182,7 +186,7 @@
         </div>
         
         <div class="content">
-            <p>本博客所选取的主题是 <a href="https://github.com/AlphaLxy/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a> ，并做了一些个性化的修改，很多修改都可以直观的看到。详细的差异可以查看 <a href="https://github.com/ppoffice/hexo-theme-icarus/compare/dbcc73d...AlphaLxy:master" target="_blank" rel="noopener">diff</a>，这里记录一些主要的改动。<br><a id="more"></a></p>
+            <p>本博客所选取的主题是 <a href="https://github.com/AlphaLxy/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a> ，并做了一些个性化的修改，很多修改都可以直观的看到。详细的差异可以查看 <a href="https://github.com/ppoffice/hexo-theme-icarus/compare/3d79ef6...AlphaLxy:master" target="_blank" rel="noopener">diff</a>，这里记录一些主要的改动。<br><a id="more"></a></p>
 <blockquote>
 <p>注: 可以通过变量 <code>page.layout</code> 来判断当前页面类型，<code>&#39;post&#39;</code> 表示当前是文章页面，具体可参考 <a href="https://hexo.io/zh-cn/docs/variables" target="_blank" rel="noopener">hexo</a> 文档。</p>
 </blockquote>
@@ -219,7 +223,7 @@
 <h3 id="card-增加浮动效果"><a href="#card-增加浮动效果" class="headerlink" title="card 增加浮动效果"></a>card 增加浮动效果</h3><p><code>:hover</code> 时增大阴影，并增加动画属性 <code>ease-in-out</code>。</p>
 <figure class="highlight diff hljs"><figcaption><span>diff:source/css/style.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> .card</span><br><span class="line">     border-radius: 4px</span><br><span class="line">     box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)</span><br><span class="line"><span class="hljs-addition">+    &amp;:hover</span></span><br><span class="line"><span class="hljs-addition">+        box-shadow: 0 6px 15px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.1)</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight diff hljs"><figcaption><span>diff:source/js/animation.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">     element.style.transform = '';</span><br><span class="line"><span class="hljs-deletion">-    element.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';</span></span><br><span class="line"><span class="hljs-addition">+    element.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.3s ease-in-out';</span></span><br></pre></td></tr></table></figure>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这里只列举了部分改动，详细的差异可以查看 <a href="https://github.com/ppoffice/hexo-theme-icarus/compare/dbcc73d...AlphaLxy:master" target="_blank" rel="noopener">diff</a>。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这里只列举了部分改动，详细的差异可以查看 <a href="https://github.com/ppoffice/hexo-theme-icarus/compare/3d79ef6...AlphaLxy:master" target="_blank" rel="noopener">diff</a>。</p>
 <p>本文会持续更新，保持跟最新的博客效果一致，希望能给你自定义主题一些帮助。</p>
 <p>如果有其他想法或者意见，可以在下方留言。</p>
 <p>😊</p>
@@ -257,6 +261,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/04/kernel-update/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Ubuntu 内核升级</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -338,7 +349,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        3
+                        4
                     </p>
                 </a>
             </div>
@@ -348,7 +359,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        6
                     </p>
                 </a>
             </div>
@@ -358,7 +369,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        6
                     </p>
                 </a>
             </div>
