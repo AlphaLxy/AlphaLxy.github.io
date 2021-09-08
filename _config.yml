@@ -100,6 +100,11 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: icarus
 
+sitemap:
+  rel: false
+  tags: false
+  categories: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
