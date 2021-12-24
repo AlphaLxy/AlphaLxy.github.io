@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.alphalxy.com/2021/11/jep-402/</loc>
+    
+    <lastmod>2021-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.alphalxy.com/2021/10/jep-401/</loc>
+    
+    <lastmod>2021-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.alphalxy.com/2021/10/jep-390/</loc>
+    
+    <lastmod>2021-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.alphalxy.com/2021/10/how-we-got-the-generics-we-have/</loc>
+    
+    <lastmod>2021-12-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.alphalxy.com/2021/10/valhalla/</loc>
+    
+    <lastmod>2021-12-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.alphalxy.com/2021/09/quine-java/</loc>
     
     <lastmod>2021-09-10</lastmod>
@@ -16,14 +51,14 @@
   </url>
   
   <url>
-    <loc>https://www.alphalxy.com/2019/03/customize-icarus-2/</loc>
+    <loc>https://www.alphalxy.com/2019/03/customize-icarus/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.alphalxy.com/2019/03/customize-icarus/</loc>
+    <loc>https://www.alphalxy.com/2019/03/customize-icarus-2/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -60,7 +95,7 @@
 
   <url>
     <loc>https://www.alphalxy.com/</loc>
-    <lastmod>2021-09-10</lastmod>
+    <lastmod>2021-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

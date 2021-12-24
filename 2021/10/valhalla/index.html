@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Valhalla (0): 序言 - Alpha Lxy</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Alpha Lxy"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Alpha Lxy"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="在 JDK 1.8 中，增加了 java.util.Optional、java.time.LocalDateTime 等类，在这些类的注释中有这么一行：  This is a value-based class; use of identity-sensitive operations (including reference equality (&amp;#x3D;&amp;#x3D;), identity hash code,"><meta property="og:type" content="blog"><meta property="og:title" content="Valhalla (0): 序言"><meta property="og:url" content="https://www.alphalxy.com/2021/10/valhalla/"><meta property="og:site_name" content="Alpha Lxy"><meta property="og:description" content="在 JDK 1.8 中，增加了 java.util.Optional、java.time.LocalDateTime 等类，在这些类的注释中有这么一行：  This is a value-based class; use of identity-sensitive operations (including reference equality (&amp;#x3D;&amp;#x3D;), identity hash code,"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://www.alphalxy.com/img/og_image.png"><meta property="article:published_time" content="2021-10-01T10:51:27.000Z"><meta property="article:modified_time" content="2021-12-24T18:30:39.223Z"><meta property="article:author" content="Xinyu Liu"><meta property="article:tag" content="java"><meta property="article:tag" content="jvm"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.alphalxy.com/2021/10/valhalla/"},"headline":"Valhalla (0): 序言","image":["https://www.alphalxy.com/img/og_image.png"],"datePublished":"2021-10-01T10:51:27.000Z","dateModified":"2021-12-24T18:30:39.223Z","author":{"@type":"Person","name":"Xinyu Liu"},"publisher":{"@type":"Organization","name":"Alpha Lxy","logo":{"@type":"ImageObject","url":"https://www.alphalxy.com/img/logo.svg"}},"description":"在 JDK 1.8 中，增加了 java.util.Optional、java.time.LocalDateTime 等类，在这些类的注释中有这么一行：  This is a value-based class; use of identity-sensitive operations (including reference equality (&#x3D;&#x3D;), identity hash code,"}</script><link rel="canonical" href="https://www.alphalxy.com/2021/10/valhalla/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.15.2/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.2.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Alpha Lxy" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives/">Archives</a><a class="navbar-item" href="/categories/">Categories</a><a class="navbar-item" href="/tags/">Tags</a><a class="navbar-item" href="/about/">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="AlphaLxy GitHub" href="https://www.github.com/AlphaLxy"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><i class="fas fa-angle-double-right"></i>Valhalla (0): 序言</h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><i class="far fa-calendar-alt"> </i><time dateTime="2021-10-01T10:51:27.000Z" title="2021-10-01T10:51:27.000Z">2021-10-01</time></span><span class="level-item is-hidden-mobile"><i class="far fa-calendar-check"> </i><time dateTime="2021-12-24T18:30:39.223Z" title="2021-12-24T18:30:39.223Z">2021-12-25</time></span><span class="level-item"><i class="far fa-folder-open has-text-grey"></i> <a class="link-muted" href="/categories/java/">java</a></span><span class="level-item"><i class="far fa-clock"></i> 21 minutes read (About 3218 words)</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><div class="content"><p>在 JDK 1.8 中，增加了 <code>java.util.Optional</code>、<code>java.time.LocalDateTime</code> 等类，在这些类的注释中有这么一行：</p>
+<blockquote>
+<p>This is a <a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/8/docs/api/java/lang/doc-files/ValueBased.html">value-based</a> class; use of identity-sensitive operations (including reference equality (==), identity hash code, or synchronization) on instances of Optional may have unpredictable results and should be avoided.</p>
+</blockquote>
+<p>引入了一个新的概念，基于值（value-based）的类。</p>
+<p>在 <a target="_blank" rel="noopener" href="https://openjdk.java.net/projects/jdk/16/">JDK 16</a> 的新特性中，还有一个不太起眼的 <a href="https://www.alphalxy.com/2021/10/jep-390/">JEP 390: Warnings for Value-Based Classes</a>。只是对基于值的类增加了一些警告信息，对功能没有任何影响。</p>
+<p>可就在这个不起眼的概念背后，却跟一个足以颠覆 Java 的项目有关，这个项目就是 <a target="_blank" rel="noopener" href="http://openjdk.java.net/projects/valhalla/">Valhalla</a>。</p>
+<h2 id="系列文章（未完待续）"><a href="#系列文章（未完待续）" class="headerlink" title="系列文章（未完待续）"></a>系列文章（未完待续）</h2><div class="menu-list is-size-6">
+<a target="_blank" href="https://www.alphalxy.com/2021/10/valhalla/"><i class="fas fa-bookmark mr-2"></i>Valhalla (0): 序言</a>
+<a target="_blank" href="https://www.alphalxy.com/2021/10/how-we-got-the-generics-we-have/"><i class="fas fa-bookmark mr-2"></i>Valhalla (1): 背景 How We Got the Generics We Have</a>
+<a target="_blank" href="https://www.alphalxy.com/2021/10/jep-390/"><i class="fas fa-bookmark mr-2"></i>Valhalla (5): 解读 JEP 390 Warnings for Value-Based Classes</a>
+<a target="_blank" href="https://www.alphalxy.com/2021/10/jep-401/"><i class="fas fa-bookmark mr-2"></i>Valhalla (6): 解读 JEP 401 Primitive Objects</a>
+<a target="_blank" href="https://www.alphalxy.com/2021/11/jep-402/"><i class="fas fa-bookmark mr-2"></i>Valhalla (7): 解读 JEP 402 Unify the Basic Primitives with Objects</a>
+</div>
+
+<a id="more"></a>
+
+<h2 id="Valhalla"><a href="#Valhalla" class="headerlink" title="Valhalla"></a>Valhalla</h2><p><a target="_blank" rel="noopener" href="https://openjdk.java.net/projects/valhalla/">https://openjdk.java.net/projects/valhalla/</a></p>
+<p>在 OpenJDK 中有一些很重要的项目比如 Amber Loom Panama Valhalla 等。相当于是 OpenJDK 的分支，进行一些探索，这些项目带来的改动最终有可能会合并到正式版本的 JDK。</p>
+<p>Valhalla 项目在 14 年就启动了，就两个目标：</p>
+<ul>
+<li>Value Types（值类型）</li>
+<li>Generic Specialization（特化泛型）</li>
+</ul>
+<h3 id="JEPs"><a href="#JEPs" class="headerlink" title="JEPs"></a>JEPs</h3><p>目前已经发布的 JEP:</p>
+<ul>
+<li><a href="https://www.alphalxy.com/2021/10/jep-390/">JEP 390 Warnings for Value-Based Classes</a></li>
+</ul>
+<p>候选状态（Candidate）的 JEP：</p>
+<ul>
+<li>JEP 218: Generics over Primitive Types</li>
+<li><a href="https://www.alphalxy.com/2021/10/jep-401/">JEP 401 Primitive Objects (Preview)</a></li>
+<li><a href="https://www.alphalxy.com/2021/11/jep-402/">JEP 402 Unify the Basic Primitives with Objects (Preview)</a></li>
+</ul>
+<blockquote>
+<p>候选意味着很有可能在近期的版本加入预览</p>
+</blockquote>
+<p>还有草稿状态的 JEP：</p>
+<ul>
+<li>JEP draft: Universal Generics (Preview)</li>
+<li>JEP draft: Value Objects (Preview)</li>
+</ul>
+<h3 id="设计文档"><a href="#设计文档" class="headerlink" title="设计文档"></a>设计文档</h3><p><a href="https://www.alphalxy.com/2021/10/how-we-got-the-generics-we-have/">背景 Background: How We Got the Generics We Have</a></p>
+<p>现状 The State of Valhalla</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://openjdk.java.net/projects/valhalla/design-notes/state-of-valhalla/01-background">The Road to Valhalla</a></li>
+<li><a target="_blank" rel="noopener" href="https://openjdk.java.net/projects/valhalla/design-notes/state-of-valhalla/02-object-model">The Language Model</a></li>
+<li><a target="_blank" rel="noopener" href="https://openjdk.java.net/projects/valhalla/design-notes/state-of-valhalla/03-vm-model">The JVM Model</a></li>
+</ol>
+<h2 id="为什么会颠覆-Java"><a href="#为什么会颠覆-Java" class="headerlink" title="为什么会颠覆 Java"></a>为什么会颠覆 Java</h2><p>未来会出现如下颠覆性的代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 目前 new 的对象一定是不相等的</span></span><br><span class="line"><span class="function"><span class="keyword">assert</span> new <span class="title">Point</span><span class="params">()</span> </span>== <span class="keyword">new</span> Point();</span><br><span class="line"><span class="comment">// 基本类型的泛型</span></span><br><span class="line">List&lt;<span class="keyword">int</span>&gt; ints = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"><span class="comment">// 数组协变，目前的数组是不变的</span></span><br><span class="line">Object[] array = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">0</span>];</span><br><span class="line"><span class="comment">// 目前 true 不是对象</span></span><br><span class="line"><span class="keyword">assert</span> <span class="keyword">true</span> <span class="keyword">instanceof</span> Boolean;</span><br><span class="line"><span class="keyword">true</span>.toString();</span><br><span class="line"><span class="comment">// 目前 new 一个实例，getClass 一定是 类名.class</span></span><br><span class="line"><span class="function"><span class="keyword">assert</span> new <span class="title">Point</span><span class="params">()</span>.<span class="title">getClass</span><span class="params">()</span> !</span>= Point.class;</span><br></pre></td></tr></table></figure>
+
+<p>同时有如下颠覆性改变：</p>
+<ul>
+<li>所有值都是对象（包括 <code>int</code>、<code>double</code> 等）</li>
+<li>不是所有的对象都保存在堆中</li>
+<li>（可能）<code>Arrays</code> 等只需要一组 sort 方法了（以前 <code>int[]</code> <code>double[]</code> 都有自己的 sort 方法）</li>
+<li>（可能）<code>java.lang.Object</code> 会变成抽象类，但是可以继续 <code>new Object()</code></li>
+</ul>
+<h2 id="翻译约定"><a href="#翻译约定" class="headerlink" title="翻译约定"></a>翻译约定</h2><p>后面有很多内容是翻译的，会按照如下约定：</p>
+<table>
+<thead>
+<tr>
+<th>英语</th>
+<th>中文</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bsic Primitive Type</td>
+<td>基本类型</td>
+<td></td>
+</tr>
+<tr>
+<td>Primitive Data Type</td>
+<td>基本类型</td>
+<td>同基本数据类型/原始类型</td>
+</tr>
+<tr>
+<td>Reference Type</td>
+<td>引用类型</td>
+<td></td>
+</tr>
+<tr>
+<td>Value Type</td>
+<td>值类型</td>
+<td></td>
+</tr>
+<tr>
+<td>Basic Primitive Value</td>
+<td>基本值</td>
+<td></td>
+</tr>
+<tr>
+<td>Reference Value</td>
+<td>引用值</td>
+<td></td>
+</tr>
+<tr>
+<td>Identity</td>
+<td></td>
+<td>指“有唯一标识的”，后续不做翻译</td>
+</tr>
+<tr>
+<td>Identity-free</td>
+<td></td>
+<td>指“没有唯一标识的”，后续不做翻译</td>
+</tr>
+<tr>
+<td>Identity-related Behavior</td>
+<td>Identity 相关操作</td>
+<td></td>
+</tr>
+<tr>
+<td>Identity-sensitive Operation</td>
+<td>Identity 相关操作</td>
+<td></td>
+</tr>
+<tr>
+<td>Primitive Wrapper Class</td>
+<td>包装类</td>
+<td></td>
+</tr>
+<tr>
+<td>Primitive Object</td>
+<td>原始对象</td>
+<td></td>
+</tr>
+<tr>
+<td>Primitive Classe</td>
+<td>原始类</td>
+<td></td>
+</tr>
+<tr>
+<td>Identity Object</td>
+<td>Identity 类</td>
+<td></td>
+</tr>
+<tr>
+<td>Identity Classe</td>
+<td>Identity 对象</td>
+<td></td>
+</tr>
+<tr>
+<td>Primitive Value Type</td>
+<td>原始值类型</td>
+<td></td>
+</tr>
+<tr>
+<td>Primitive Reference Type</td>
+<td>原始引用类型</td>
+<td></td>
+</tr>
+<tr>
+<td>Reference-favoring Primitive Classe</td>
+<td>引用优先的原始类</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="概念解释"><a href="#概念解释" class="headerlink" title="概念解释"></a>概念解释</h2><h3 id="Type"><a href="#Type" class="headerlink" title="Type"></a>Type</h3><p>有这么几个跟类型相关的概念</p>
+<ul>
+<li><strong>值（Value）：</strong>在 Java 中有基本值和引用值。</li>
+<li><strong>类型（Type）：</strong>描述值和可执行操作的集合，每一个值对应一个类型。在 Java 中有值类型和引用类型，一些语言还有指针类型。</li>
+<li><strong>类（Class）：</strong>一种具体的类型 class type，或指 class 的声明。</li>
+<li><strong>对象（Object）：</strong>类的实例。</li>
+<li><strong>类对象（Class Object）：</strong>特指 <code>java.lang.Class</code> 的实例，在运行时表示一个类。</li>
+</ul>
+<p>为什么说 Class 是一种 Type，来看一下 Class 的定义（Class implements Type）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Class</span>&lt;<span class="title">T</span>&gt; <span class="keyword">implements</span> <span class="title">java</span>.<span class="title">io</span>.<span class="title">Serializable</span>,</span></span><br><span class="line"><span class="class">                              <span class="title">GenericDeclaration</span>,</span></span><br><span class="line"><span class="class">                              <span class="title">Type</span>,</span></span><br><span class="line"><span class="class">                              <span class="title">AnnotatedElement</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>除了类类型，还有 <code>ParameterizedType</code>、<code>GenericArrayType</code> 等类型，一般用在反射相关的 API。同时类型还有一个关联的概念类型系统，编译期也会有类型检查。</p>
+<p>值和类型对应，类和对象对应，可以参考 <code>java.lang.reflect.Type</code> 的相关文档。总的来说类型是一个更加抽象的概念。</p>
+<h3 id="Value-Type"><a href="#Value-Type" class="headerlink" title="Value Type"></a>Value Type</h3><p>跟引用相反，数据直接存储在栈中，更像是一个盒子，包装了若干个值，这个概念可以参考 C 语言中的 struct。</p>
+<h3 id="Identity"><a href="#Identity" class="headerlink" title="Identity"></a>Identity</h3><p>在面向对象的程序设计中，实例化一个对象之后，不管我们怎么修改它的状态（属性值），我们都说它还是同一个对象（虽然它变化了），因此有两种维度来比较一个对象，状态和 Identity。</p>
+<blockquote>
+<p>Identity 就是唯一标识，在实现上可以被认为是在内存中的地址（不考虑 GC 的话）。</p>
+</blockquote>
+<p>具体到 Java 的话 equals 方法用来比较对象的状态，== 和 != 用来比较对象的 Identity（通常我们说的是不是同一个对象），每个对象都有唯一的 Identity（这个概念可以参考 <code>System.identityHashCode</code> 这个方法），因此</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">assert</span> new <span class="title">Object</span><span class="params">()</span> !</span>= <span class="keyword">new</span> Object();</span><br><span class="line"><span class="function"><span class="keyword">assert</span> new <span class="title">Integer</span><span class="params">(<span class="number">1</span>)</span> !</span>= <span class="keyword">new</span> Integer(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+
+<p>那么 Identity-free/Identity-less 就是反过来的意思，例如基本类型就是 Identity-free 的，所以</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assert</span> <span class="number">1</span> == <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<p>所以在目前版本的 Java 中，所有的引用类型都是 Identity 的、基本类型都是 Identity-free 的，不过我们一般不会这么去描述，但这个概念是非常重要的。</p>
+<blockquote>
+<p>Identity 不太好翻译，后面就当形容词用了，指“有唯一标识的”，Identity-free 指“没有唯一标识的”</p>
+</blockquote>
+<p>在 Java 中有一些对象，其实是不需要区分不同实例的，例如</p>
+<ul>
+<li><code>Integer.valueOf(1000)</code> 就表示的是 1000 这个数字，没必要区分这个 1000 和那个 1000。</li>
+<li><code>LocalTime.of(10, 0)</code> 就表示“早上 10 点”，区分不同“早上 10 点”的实例是没有意义的。如果有一个方法是 <code>doSomeThing(LocalTime localTime)</code> ，那么几乎所有的场景下，我传入不同实例的“早上 10 点”应该都是一样的行为。</li>
+</ul>
+<blockquote>
+<p>不是说不能区分，而是说没意义，这里只解释 Identity 这个概念。</p>
+</blockquote>
+<h3 id="Value-Based-Classes"><a href="#Value-Based-Classes" class="headerlink" title="Value-Based Classes"></a>Value-Based Classes</h3><p><a target="_blank" rel="noopener" href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html">https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html</a></p>
+<blockquote>
+<p>这个概念最早在 java 8 就提出了<br><a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/8/docs/api/java/lang/doc-files/ValueBased.html">https://docs.oracle.com/javase/8/docs/api/java/lang/doc-files/ValueBased.html</a></p>
+</blockquote>
+<p>在上面的讨论中，我们发现有一些类型应该是 Identity-free 的，例如 <code>java.lang.Integer</code> 和 <code>java.time.LocalTime</code>，不应该去区分不同的实例。</p>
+<p>再具体一点，满足下列规范的类被称为基于值的类（value-based classes）</p>
+<ul>
+<li>所有的实例字段都是 <code>final</code> 的（不可变的，但可以包含引用并指向可变对象，例如 <code>java.util.Optional</code>）。</li>
+<li>equals、hashCode 和 toString 的实现只依赖实例字段的值（包含引用的对象）而不是 Identity。</li>
+<li>方法在处理相等的（equals）实例时行为是一致的（认为实例是可自由替换的（freely substitutable））。</li>
+<li>实例不执行同步操作（<code>synchronized</code>）。</li>
+<li>没有声明可访问的构造函数（可以包含废弃的）。</li>
+<li>不提供任何可以生成独立 Identity 的对象创建机制：<ul>
+<li>简单来说就是任何方式创建的对象都是 Identity-free 的。</li>
+<li>特别的，所有的工厂方法都必须保证，独立生成的两个实例如果 equals 那么一定 == 。</li>
+<li>特别的，<code>Object.clone()</code> 应该返回相同 == 的对象。</li>
+</ul>
+</li>
+<li>是 <code>final</code> 的，父类（们）只能是 Object 或者没有字段、没有初始化代码、构造函数都是空的抽象类。</li>
+</ul>
+<p>如果基于值的两个对象是相等的（equals），程序也不应该尝试去区分它们</p>
+<ul>
+<li>不管是通过直接或间接的引用、使用 Identity hash、序列化等任何机制。</li>
+<li>不应该执行同步操作（<code>synchronized</code>），因为没有办法保证独占对象监视器。</li>
+<li>上述行为都是 Identity 相关的行为（Identity-related Behavior），在未来版本的 Java 中可能会变化，例如同步会失败。</li>
+</ul>
+<p>目前基于值的类只是一种定义，为了后续版本更好的发展，在 JDK 16 中引入了新的 <a href="https://www.alphalxy.com/2021/10/jep-390/">JEP 390: Warnings for Value-Based Classes</a>，会对上述的一些行为进行警告。</p>
+<blockquote>
+<p>只增加了警告信息，没有任何功能变化<br>It does not make any changes to the Java Language or Java Virtual Machine specifications.</p>
+</blockquote>
+<h3 id="Primitive-Class-and-Primitive-Objects"><a href="#Primitive-Class-and-Primitive-Objects" class="headerlink" title="Primitive Class and Primitive Objects"></a>Primitive Class and Primitive Objects</h3><p>基于值的类只是一个概念，任何一个类只要满足上述规范就是基于值的，目前并不会对实际写代码产生任何影响。</p>
+<p>在 <a target="_blank" rel="noopener" href="https://openjdk.java.net/projects/valhalla/">Valhalla</a> 项目中引入一种新的类型，<a href="https://www.alphalxy.com/2021/10/jep-401/">原始类（primitive class）(预览)</a></p>
+<ul>
+<li>基于值的</li>
+<li>Identity-free</li>
+</ul>
+<p>因此在未来的 Java 代码中可能会出现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">primitive <span class="class"><span class="keyword">class</span> <span class="title">Point</span> </span>&#123;...&#125;</span><br><span class="line"><span class="function"><span class="keyword">assert</span> new <span class="title">Point</span><span class="params">()</span> </span>== <span class="keyword">new</span> Point();</span><br><span class="line"><span class="function"><span class="keyword">assert</span> new <span class="title">Point</span><span class="params">()</span> </span>== Point.<span class="keyword">default</span>;</span><br></pre></td></tr></table></figure>
+
+<p>是不是感觉 Java 的底层逻辑都改变了，尤其是两个 new 出来的对象居然是 == 的，在基本类型和引用类型之间增加了一种新的类型。</p>
+<blockquote>
+<p>Codes like a class, works like an int.（像 class 一样编写，像 int 一样运行）<br>这里只解释新的概念，后面会进一步探讨为什么需要增加新的类型</p>
+</blockquote>
+<p>在以前的草案中称为 “inline class” / “inline type” ，来看看目前最新的定义<br><a target="_blank" rel="noopener" href="https://mail.openjdk.java.net/pipermail/valhalla-spec-experts/2020-October/001415.html">https://mail.openjdk.java.net/pipermail/valhalla-spec-experts/2020-October/001415.html</a></p>
+<p>对象会细分成两种类型</p>
+<ul>
+<li><strong>Primitive Object 原始对象：</strong>是一种新的 Identity-free 的对象，相等、同步等相关操作的行为会有所不同</li>
+<li><strong>Identity Object：</strong>除了 Primitive Object 之外的对象（包括数组）</li>
+</ul>
+<p>类型也会进行细分</p>
+<ul>
+<li><strong>Identity Class：</strong>实例是 Identity Object 的类。</li>
+<li><strong>Primitive Class 原始类（以前叫 Inline Class）：</strong>是一种特殊的类，它的实例是原始对象。类是 <code>final</code> 的，并且受到各种限制。非原始类要不然是 Identity Class 要不然是抽象类（或者是 <code>java.lang.Object</code>）。</li>
+<li><strong>Primitive Value Type 原始值类型（以前叫 Inline Type）：</strong>是一种类型，是值为原始对象（就是对象本身，而不是引用）。每一个原始类都有一个原始值类型，通常就是 类名 来表示。</li>
+<li><strong>Primitive Reference Type 原始引用类型：</strong>是一种类型，值为原始对象的引用或者 <code>null</code>。每一个原始类都有一个原始引用类型，通常就是 类名.ref 来表示。</li>
+<li><strong>Primitive Type：</strong>Primitive Value Type 或者 Primitive Reference Type。</li>
+<li><strong>Reference Type：</strong>仍然表示对象的引用或者 <code>null</code>（跟以前相同，强调包含了 Primitive Reference Type）。</li>
+</ul>
+<blockquote>
+<p>类 Class / 类型 Type 是两个概念，参考上文。</p>
+</blockquote>
+<p>在 Java 语言中，基本类型将（计划）变成原始对象，而用 <code>java.lang.Integer</code> 等作为它们的原始类。在需要的时候，可以使用内置的原始值类型（built-in primitive value type）指代它们的类型。</p>
+<blockquote>
+<p>意味着，后面就没有基本类型了，只有原始对象和 Identity 对象，Java 将真正变成一切皆对象。<br>int double 等含义会发生非常大的变化，但在使用上几乎没有变化。</p>
+</blockquote>
+<p>这些概念有一些繁琐，我们来举一些例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">java.lang.Integer.val.class  &#x2F;&#x2F; 原始类</span><br><span class="line">int.class                    &#x2F;&#x2F; 原始类</span><br><span class="line">java.lang.Integer.class      &#x2F;&#x2F; 原始类</span><br><span class="line">java.lang.Object.class       &#x2F;&#x2F; 非原始类</span><br><span class="line"></span><br><span class="line">int.class 等价于 Integer.val.class</span><br><span class="line"></span><br><span class="line">java.lang.Integer.val        &#x2F;&#x2F; 原始值类型</span><br><span class="line">java.lang.Integer            &#x2F;&#x2F; 原始引用类型</span><br><span class="line">int.ref                      &#x2F;&#x2F; 原始引用类型</span><br><span class="line">int                          &#x2F;&#x2F; 原始值类型（关键字）</span><br><span class="line"></span><br><span class="line">int.ref 等价于 Integer</span><br><span class="line">int     等价于 Integer.val</span><br></pre></td></tr></table></figure>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Valhalla (0): 序言</p><p><a href="https://www.alphalxy.com/2021/10/valhalla/">https://www.alphalxy.com/2021/10/valhalla/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Xinyu Liu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-10-01</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-12-25</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-nc"></i> <i class="fab fa-creative-commons-sa"></i> CC BY-NC-SA 4.0</a></p></div></div></div></div></div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"><div class="article-tags is-size-7 is-uppercase"><i class="fas fa-tags has-text-grey"></i> <a class="link-muted" rel="tag" href="/tags/java/">java, </a><a class="link-muted" rel="tag" href="/tags/jvm/">jvm </a></div></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/10/how-we-got-the-generics-we-have/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Valhalla (1): 背景 How We Got the Generics We Have</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/quine-java/"><span class="level-item">Quine 自产生程序 — Java</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://www.alphalxy.com/2021/10/valhalla/';
+            this.page.identifier = '2021/10/valhalla/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'alphalxy-blog' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level" style="margin-bottom:1rem"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-96x96 mx-auto mb-2"><img class="avatar" src="https://www.gravatar.com/avatar/e0f4032c0f2d1068ffffbaf93c0bef52?s=96" alt="Xinyu Liu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Xinyu Liu</p><p class="is-size-6 is-block">liuxinyu0922@163.com</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Hangzhou, China</span></p></div></div></nav><nav class="level menu-list is-mobile" style="margin-bottom:1rem"><a class="level-item has-text-centered is-marginless" href="/archives/"><div><p class="heading">Posts</p><div><p class="title">12</p></div></div></a><a class="level-item has-text-centered is-marginless" href="/categories/"><div><p class="heading">Categories</p><div><p class="title">7</p></div></div></a><a class="level-item has-text-centered is-marginless" href="/tags/"><div><p class="heading">Tags</p><div><p class="title">10</p></div></div></a></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://www.github.com/AlphaLxy" target="_blank" rel="noopener"><i class="fab fa-github"></i>  Follow</a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#系列文章（未完待续）"><span class="level-left"><span class="level-item">1</span><span class="level-item">系列文章（未完待续）</span></span></a></li><li><a class="level is-mobile" href="#Valhalla"><span class="level-left"><span class="level-item">2</span><span class="level-item">Valhalla</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#JEPs"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">JEPs</span></span></a></li><li><a class="level is-mobile" href="#设计文档"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">设计文档</span></span></a></li></ul></li><li><a class="level is-mobile" href="#为什么会颠覆-Java"><span class="level-left"><span class="level-item">3</span><span class="level-item">为什么会颠覆 Java</span></span></a></li><li><a class="level is-mobile" href="#翻译约定"><span class="level-left"><span class="level-item">4</span><span class="level-item">翻译约定</span></span></a></li><li><a class="level is-mobile" href="#概念解释"><span class="level-left"><span class="level-item">5</span><span class="level-item">概念解释</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Type"><span class="level-left"><span class="level-item">5.1</span><span class="level-item">Type</span></span></a></li><li><a class="level is-mobile" href="#Value-Type"><span class="level-left"><span class="level-item">5.2</span><span class="level-item">Value Type</span></span></a></li><li><a class="level is-mobile" href="#Identity"><span class="level-left"><span class="level-item">5.3</span><span class="level-item">Identity</span></span></a></li><li><a class="level is-mobile" href="#Value-Based-Classes"><span class="level-left"><span class="level-item">5.4</span><span class="level-item">Value-Based Classes</span></span></a></li><li><a class="level is-mobile" href="#Primitive-Class-and-Primitive-Objects"><span class="level-left"><span class="level-item">5.5</span><span class="level-item">Primitive Class and Primitive Objects</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Alpha Lxy" height="28"></a><p class="is-size-7"><span>&copy; 2021 Xinyu Liu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-nc"></i> <i class="fab fa-creative-commons-sa"></i> </a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="AlphaLxy GitHub" href="https://www.github.com/AlphaLxy"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/KaTeX/0.11.1/katex.min.css"><script src="https://cdnjs.loli.net/ajax/libs/KaTeX/0.11.1/katex.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/KaTeX/0.11.1/contrib/auto-render.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/KaTeX/0.11.1/contrib/mhchem.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
