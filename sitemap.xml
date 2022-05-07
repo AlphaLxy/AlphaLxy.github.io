@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.alphalxy.com/2021/12/the-road-to-valhalla/</loc>
+    <loc>https://www.alphalxy.com/2022/05/regex-match-timeout/</loc>
     
-    <lastmod>2021-12-25</lastmod>
+    <lastmod>2022-05-07</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.alphalxy.com/2021/11/jep-402/</loc>
     
-    <lastmod>2021-12-25</lastmod>
+    <lastmod>2022-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.alphalxy.com/2021/10/valhalla/</loc>
+    
+    <lastmod>2022-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.alphalxy.com/2021/12/the-road-to-valhalla/</loc>
+    
+    <lastmod>2021-12-26</lastmod>
     
   </url>
   
@@ -31,13 +45,6 @@
   
   <url>
     <loc>https://www.alphalxy.com/2021/10/how-we-got-the-generics-we-have/</loc>
-    
-    <lastmod>2021-12-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.alphalxy.com/2021/10/valhalla/</loc>
     
     <lastmod>2021-12-25</lastmod>
     
@@ -102,7 +109,7 @@
 
   <url>
     <loc>https://www.alphalxy.com/</loc>
-    <lastmod>2021-12-25</lastmod>
+    <lastmod>2022-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
