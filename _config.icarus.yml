@@ -1,0 +1,161 @@
+version: 5.1.0
+variant: default
+logo: /img/logo.svg
+head:
+    favicon: /img/favicon.svg
+    manifest:
+        name:
+        short_name:
+        start_url:
+        theme_color:
+        background_color:
+        display: standalone
+        icons:
+            -
+                src: ''
+                sizes: ''
+                type:
+    open_graph:
+        title:
+        type: blog
+        url:
+        image:
+        site_name:
+        author:
+        description:
+        twitter_card:
+        twitter_id:
+        twitter_site:
+        google_plus:
+        fb_admins:
+        fb_app_id:
+    structured_data:
+        title:
+        description:
+        url:
+        author:
+        image:
+    meta:
+        - ''
+    rss:
+navbar:
+    menu:
+        Home: /
+        Archives: /archives/
+        Categories: /categories/
+        Tags: /tags/
+        About: /about/
+    links:
+        AlphaLxy GitHub:
+            icon: fab fa-github
+            url: https://www.github.com/AlphaLxy
+footer:
+    links:
+        CC BY-NC-SA 4.0:
+            icon:
+                - fab fa-creative-commons
+                - fab fa-creative-commons-by
+                - fab fa-creative-commons-nc
+                - fab fa-creative-commons-sa
+            url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+        AlphaLxy GitHub:
+            icon: fab fa-github
+            url: https://www.github.com/AlphaLxy
+article:
+    highlight:
+        theme: github-gist
+        clipboard: true
+        fold: unfolded
+    readtime: true
+    licenses:
+        CC BY-NC-SA 4.0:
+            icon:
+                - fab fa-creative-commons
+                - fab fa-creative-commons-by
+                - fab fa-creative-commons-nc
+                - fab fa-creative-commons-sa
+            text: CC BY-NC-SA 4.0
+            url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+toc: true
+search:
+    type: insight
+comment:
+    type: disqusjs
+    shortname: alphalxy-blog
+    api_key:
+        - 5vNlbaVFbUWJEfg45a4W2eS1pGk6YDf3BoRmbUt5oCteUtJalJxdik6EgZWDGICC
+        - M6U0tycmlOwkeadjgjGrrUYJZzR7LFakiur7ad78eImTGkJjqU1lFgHXAPzZHNb8
+        - lVltbGH4pPUYFwdOi0JDh1hmwMRtuUF05Yyc1MyBUoJRBQhn4wQoG90VB0j3N1NJ
+        - uQbbc193Lwj7pyDJRszhRZRs6Kl7PPfpVjAgfN46WNmUoFaqTpiZ7dxkPYL13NNZ
+        - mu8gCIMF7kJw1sxvCsrndjV8HfRzswjS38kjPkpimTIfZ3DmSvA3UK3r7WWVLdNJ
+    api: https://disqus.skk.moe/disqus/
+sidebar:
+    left:
+        sticky: false
+    right:
+        sticky: false
+widgets:
+    -
+        position: left
+        type: profile
+        author: Xinyu Liu
+        author_title: liuxinyu0922@163.com
+        location: Hangzhou, China
+        avatar: /img/favicon.svg
+        avatar_rounded: false
+        gravatar:
+        follow_link: https://www.github.com/AlphaLxy
+        social_links:
+    -
+        position: left
+        type: toc
+        index: true
+        collapsed: true
+        depth: 6
+    -
+        position: right
+        type: recent_posts
+    -
+        position: right
+        type: categories
+    -
+        position: left
+        type: tags
+    -
+        position: left
+        type: archives
+plugins:
+    animejs: true
+    back_to_top: true
+    baidu_analytics:
+        tracking_id:
+    bing_webmaster:
+        tracking_id:
+    busuanzi: true
+    cnzz:
+        id:
+        web_id:
+    cookie_consent:
+        type: info
+        theme: edgeless
+        static: false
+        position: bottom-left
+        policyLink: https://www.cookiesandyou.com/
+    gallery: true
+    google_analytics:
+        tracking_id:
+    hotjar:
+        site_id:
+    katex: true
+    mathjax: false
+    outdated_browser: false
+    progressbar: true
+    statcounter:
+        project:
+        security:
+    twitter_conversion_tracking:
+        pixel_id:
+providers:
+    cdn: loli
+    fontcdn: loli
+    iconcdn: loli
