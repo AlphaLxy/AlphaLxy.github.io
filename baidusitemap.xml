@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.alphalxy.com/2019/03/customize-icarus/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <loc>https://www.alphalxy.com//2019/03/customize-icarus/</loc>
+    <lastmod>2023-01-11</lastmod>
   </url>
   <url>
-    <loc>https://www.alphalxy.com/2021/09/java-classloader/</loc>
+    <loc>https://www.alphalxy.com//2021/09/java-classloader/</loc>
     <lastmod>2022-05-09</lastmod>
   </url>
   <url>
@@ -13,19 +13,15 @@
     <lastmod>2022-05-09</lastmod>
   </url>
   <url>
-    <loc>https://www.alphalxy.com/2021/11/jep-402/</loc>
-    <lastmod>2022-05-07</lastmod>
+    <loc>https://www.alphalxy.com/2021/10/valhalla/</loc>
+    <lastmod>2021-12-25</lastmod>
   </url>
   <url>
-    <loc>https://www.alphalxy.com/2021/10/valhalla/</loc>
-    <lastmod>2022-05-07</lastmod>
+    <loc>https://www.alphalxy.com/2021/10/how-we-got-the-generics-we-have/</loc>
+    <lastmod>2021-12-25</lastmod>
   </url>
   <url>
     <loc>https://www.alphalxy.com/2021/12/the-road-to-valhalla/</loc>
-    <lastmod>2021-12-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alphalxy.com/2021/10/jep-401/</loc>
     <lastmod>2021-12-25</lastmod>
   </url>
   <url>
@@ -33,7 +29,11 @@
     <lastmod>2021-12-25</lastmod>
   </url>
   <url>
-    <loc>https://www.alphalxy.com/2021/10/how-we-got-the-generics-we-have/</loc>
+    <loc>https://www.alphalxy.com/2021/10/jep-401/</loc>
+    <lastmod>2021-12-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alphalxy.com/2021/11/jep-402/</loc>
     <lastmod>2021-12-25</lastmod>
   </url>
   <url>
